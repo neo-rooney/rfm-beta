@@ -51,3 +51,11 @@ Thumbs.db
 *storybook.log
 storybook-static
 *.nx
+
+# yarn
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.pnp.js
+.pnp.data/
+.yarn/patches/
