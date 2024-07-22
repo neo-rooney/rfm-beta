@@ -2,5 +2,10 @@
   "name": "rfm",
   "version": "0.0.1",
   "author": "rooney",
-  "license": "ISC"
+  "license": "ISC",
+  "packageManager": "yarn@4.3.1",
+  "workspaces": [
+    "packages/**/*",
+    "services/**/*"
+  ]
 }

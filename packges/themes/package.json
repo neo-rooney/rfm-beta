@@ -4,10 +4,10 @@
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
-    "dev": "concurrently \"npm:dev:type\" \"npm:dev:js\"",
+    "dev": "concurrently \"yarn:dev:type\" \"yarn:dev:js\"",
     "dev:js": "node build.js --dev --watch",
     "dev:type": "tsc --emitDeclarationOnly --watch",
-    "build": "npm run build:js && npm run build:type",
+    "build": "yarn build:js && yarn build:type",
     "build:js": "node build.js",
     "build:type": "tsc --emitDeclarationOnly"
   },
