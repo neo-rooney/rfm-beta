@@ -417,13 +417,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@rfm-ui/themes@workspace:packages/themes"
   dependencies:
+    "@rfm-util/builder": "workspace:^"
     concurrently: "npm:^8.2.2"
-    esbuild: "npm:^0.23.0"
     typescript: "npm:^5.5.3"
   languageName: unknown
   linkType: soft
 
-"@rfm-util/builder@workspace:packages/utils/builder":
+"@rfm-util/builder@workspace:^, @rfm-util/builder@workspace:packages/utils/builder":
   version: 0.0.0-use.local
   resolution: "@rfm-util/builder@workspace:packages/utils/builder"
   dependencies:

@@ -21,7 +21,7 @@ const run = async ({
   pkg,
   config = {},
 }: {
-  entryPoints: string[];
+  entryPoints?: string[];
   pkg: any;
   config: any;
 }) => {

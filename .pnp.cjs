@@ -569,8 +569,8 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./packages/themes/",\
         "packageDependencies": [\
           ["@rfm-ui/themes", "workspace:packages/themes"],\
+          ["@rfm-util/builder", "workspace:packages/utils/builder"],\
           ["concurrently", "npm:8.2.2"],\
-          ["esbuild", "npm:0.23.0"],\
           ["typescript", "patch:typescript@npm%3A5.5.3#optional!builtin<compat/typescript>::version=5.5.3&hash=379a07"]\
         ],\
         "linkType": "SOFT"\
