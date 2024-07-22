@@ -1,14 +1,11 @@
 import * as esbuild from 'esbuild';
+import { createContextParams, runParams } from './types';
 
 async function createContext({
   format,
   outExtension,
   config,
-}: {
-  format: any;
-  outExtension?: any;
-  config: any;
-}) {
+}: createContextParams) {
   return await esbuild.context({
     ...config,
     format,
@@ -20,11 +17,7 @@ const run = async ({
   entryPoints = ['src/index.ts'],
   pkg,
   config = {},
-}: {
-  entryPoints?: string[];
-  pkg: any;
-  config: any;
-}) => {
+}: runParams) => {
   const dev = process.argv.includes('--dev');
   const minify = !dev;
 
