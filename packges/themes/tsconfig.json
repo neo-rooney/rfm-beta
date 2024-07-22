@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    // 컴파일된 JavaScript의 버전을 지정
+    // ES5: IE11과 같은 오래된 브라우저와 호환
+    // ES6 (또는 ES2015): 최신 브라우저와 Node.js의 최신 버전에서 호환
+    // ESNext : 최신 ECMAScript 기능을 사용하며, 현재 및 미래의 ECMAScript 표준을 타겟팅
+    "target": "ESNext",
+    // 모듈 시스템을 지정
+    // ESNext: 최신 ECMAScript 모듈 시스템을 사용
+    // CommonJS: Node.js 환경에서 사용
+    // AMD: Asynchronous Module Definition, 주로 브라우저 환경에서 사용
+    // UMD: Universal Module Definition, Node.js와 브라우저 모두에서 작동
+    "module": "ESNext",
+    //컴파일할 때 포함할 라이브러리의 목록을 지정
+    // ESNext: 최신 ECMAScript 기능 사용 가능(ex Promise)
+    // DOM : DOM API 사용 가능
+    "lib": ["ESNext", "DOM"],
+    // *.d.ts 파일을 생성
+    "declaration": true,
+    // 모든 엄격한 타입 검사 옵션을 활성화
+    "strict": true,
+    // 모듈 해석 방식을 지정
+    // node : 모듈 해석은 Node.js 스타일을 따름. 즉, node_modules 폴더에서 모듈을 찾고, index.js나 package.json 파일을 기반으로 해석
+    "moduleResolution": "node",
+    // JSX를 사용할 때의 처리 방식을 지정
+    // react-jsx : React 17+ 버전의 JSX 변환을 사용
+    "jsx": "react-jsx",
+    // 컴파일된 JavaScript 파일들을 저장할 디렉토리를 지정
+    "outDir": "./dist"
+  }
+}

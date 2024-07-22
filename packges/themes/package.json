@@ -4,11 +4,17 @@
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
-    "dev": "node build.js --dev --watch",
-    "build:js": "node build.js"
+    "dev": "concurrently \"npm:dev:type\" \"npm:dev:js\"",
+    "dev:js": "node build.js --dev --watch",
+    "dev:type": "tsc --emitDeclarationOnly --watch",
+    "build": "npm run build:js && npm run build:type",
+    "build:js": "node build.js",
+    "build:type": "tsc --emitDeclarationOnly"
   },
   "devDependencies": {
-    "esbuild": "^0.23.0"
+    "concurrently": "^8.2.2",
+    "esbuild": "^0.23.0",
+    "typescript": "^5.5.3"
   },
   "author": "rooney",
   "license": "ISC"
