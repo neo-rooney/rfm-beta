@@ -9,6 +9,7 @@
     "services/**/*"
   ],
   "devDependencies": {
-    "nx": "^19.5.1"
+    "nx": "^19.5.1",
+    "typescript": "^5.5.3"
   }
 }

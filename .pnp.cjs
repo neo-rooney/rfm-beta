@@ -32,7 +32,8 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
-          ["nx", "virtual:56afae8ac708c5739d7d9cdb6fff47fdc57f8f4b40ba10ee5ff8cd9f90adbf09157f6164a0949b90d57d3c441d0bdedc37157019a1aca6f21c07231e66c4fc9e#npm:19.5.1"]\
+          ["nx", "virtual:56afae8ac708c5739d7d9cdb6fff47fdc57f8f4b40ba10ee5ff8cd9f90adbf09157f6164a0949b90d57d3c441d0bdedc37157019a1aca6f21c07231e66c4fc9e#npm:19.5.1"],\
+          ["typescript", "patch:typescript@npm%3A5.5.3#optional!builtin<compat/typescript>::version=5.5.3&hash=379a07"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -1417,7 +1418,8 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["rfm", "workspace:."],\
-          ["nx", "virtual:56afae8ac708c5739d7d9cdb6fff47fdc57f8f4b40ba10ee5ff8cd9f90adbf09157f6164a0949b90d57d3c441d0bdedc37157019a1aca6f21c07231e66c4fc9e#npm:19.5.1"]\
+          ["nx", "virtual:56afae8ac708c5739d7d9cdb6fff47fdc57f8f4b40ba10ee5ff8cd9f90adbf09157f6164a0949b90d57d3c441d0bdedc37157019a1aca6f21c07231e66c4fc9e#npm:19.5.1"],\
+          ["typescript", "patch:typescript@npm%3A5.5.3#optional!builtin<compat/typescript>::version=5.5.3&hash=379a07"]\
         ],\
         "linkType": "SOFT"\
       }]\

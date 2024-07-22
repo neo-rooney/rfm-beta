@@ -1252,6 +1252,7 @@ __metadata:
   resolution: "rfm@workspace:."
   dependencies:
     nx: "npm:^19.5.1"
+    typescript: "npm:^5.5.3"
   languageName: unknown
   linkType: soft
 
