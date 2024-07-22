@@ -17,12 +17,17 @@ const RAW_RUNTIME_STATE =
     {\
       "name": "@rfm-ui/themes",\
       "reference": "workspace:packages/themes"\
+    },\
+    {\
+      "name": "@rfm-util/builder",\
+      "reference": "workspace:packages/utils/builder"\
     }\
   ],\
   "enableTopLevelFallback": true,\
   "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
   "fallbackExclusionList": [\
     ["@rfm-ui/themes", ["workspace:packages/themes"]],\
+    ["@rfm-util/builder", ["workspace:packages/utils/builder"]],\
     ["rfm", ["workspace:."]]\
   ],\
   "fallbackPool": [\
@@ -565,6 +570,18 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@rfm-ui/themes", "workspace:packages/themes"],\
           ["concurrently", "npm:8.2.2"],\
+          ["esbuild", "npm:0.23.0"],\
+          ["typescript", "patch:typescript@npm%3A5.5.3#optional!builtin<compat/typescript>::version=5.5.3&hash=379a07"]\
+        ],\
+        "linkType": "SOFT"\
+      }]\
+    ]],\
+    ["@rfm-util/builder", [\
+      ["workspace:packages/utils/builder", {\
+        "packageLocation": "./packages/utils/builder/",\
+        "packageDependencies": [\
+          ["@rfm-util/builder", "workspace:packages/utils/builder"],\
+          ["@types/node", "npm:20.14.11"],\
           ["esbuild", "npm:0.23.0"],\
           ["typescript", "patch:typescript@npm%3A5.5.3#optional!builtin<compat/typescript>::version=5.5.3&hash=379a07"]\
         ],\

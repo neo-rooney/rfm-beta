@@ -423,6 +423,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@rfm-util/builder@workspace:packages/utils/builder":
+  version: 0.0.0-use.local
+  resolution: "@rfm-util/builder@workspace:packages/utils/builder"
+  dependencies:
+    "@types/node": "npm:^20.14.11"
+    esbuild: "npm:^0.23.0"
+    typescript: "npm:^5.5.3"
+  languageName: unknown
+  linkType: soft
+
 "@sinclair/typebox@npm:^0.27.8":
   version: 0.27.8
   resolution: "@sinclair/typebox@npm:0.27.8"
@@ -479,7 +489,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*":
+"@types/node@npm:*, @types/node@npm:^20.14.11":
   version: 20.14.11
   resolution: "@types/node@npm:20.14.11"
   dependencies:
